@@ -1,5 +1,5 @@
 .input {
-  background-color: rgb(245, 245, 245);
+  background-color: rgb(255, 255, 255);
   outline: none;
   border: 1px solid rgb(214, 214, 214);
   border-radius: 6px;
@@ -24,7 +24,7 @@
 }
 
 .coord-converter-form {
-  background-color: rgb(245, 245, 245);
+  background-color: rgb(255, 255, 255);
   padding: 48px;
   border-radius: 12px;
   display: flex;

@@ -1,6 +1,29 @@
 jQuery(document).ready(function ($) {
+  // Localize the ajaxurl variable
+  // var ajaxurl = feature_coord_converter_params.ajaxurl;
+
+  //handle the change in select tag
   $("#format").on("change", function () {
     let format = $(this).val();
+  });
+
+  // AJAX request to save coordinates to the database
+  jQuery("#save-btn").on("click", function () {
+    alert("clickedme ");
+    var data = {
+      action: "feature_coord_converter",
+      latitude: $("#latitude").val(),
+      longitude: $("#longitude").val(),
+      format: $("#format").val(),
+    };
+
+    $.post(ajaxurl, data, function (response) {
+      if (response.success) {
+        alert("Coordinates saved to the database.");
+      } else {
+        alert("Error saving coordinates to the database.");
+      }
+    });
   });
 
   $("#convert-btn").on("click", function (event) {

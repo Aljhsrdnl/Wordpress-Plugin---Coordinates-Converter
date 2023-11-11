@@ -20,6 +20,7 @@ function feature_coord_converter_shortcode() {
     ob_start();
     ?>
     <div class="coord-converter-form">
+         <h3>Coordinate Converter</h3>
         <form id="coord-converter-form">
             <div>
                 <label for="format">Coordinate Format:</label>
@@ -41,10 +42,10 @@ function feature_coord_converter_shortcode() {
 
 
             <button type="button" id="convert-btn">Convert</button>
-
+            <button type="button" id="save-btn">Save to Database</button>
             <div id="result">
-               <p>Latitude: <span id="latitude_value"></span></p>
-                <p>Longitude: <span id="longitude_value"></span></p>
+               <p>Converted Latitude Value: <span id="latitude_value"></span></p>
+                <p>Converted Longitude Value: <span id="longitude_value"></span></p>
             </div>
         </form>
     </div>

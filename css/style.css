@@ -1,15 +1,26 @@
 .input {
-  background-color: white;
+  background-color: rgb(245, 245, 245);
   outline: none;
-  border: 1px solid gray;
+  border: 1px solid rgb(214, 214, 214);
   border-radius: 6px;
   padding: 8px 16px;
   width: 500px;
   display: block;
+  font-size: 16px;
+  color: rgb(102, 102, 102);
+  cursor: text;
+}
+
+.input:hover {
+  border: 1px solid rgb(102, 102, 102);
+}
+
+.input:focus {
+  border: 1px solid rgb(38, 0, 128);
 }
 
 .field {
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 }
 
 .coord-converter-form {
@@ -19,6 +30,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  box-shadow: 0px 0px 10px rgba(214, 214, 214, 0.5);
 }
 
 #convert-btn,
@@ -29,5 +41,40 @@
   border-radius: 6px;
   color: white;
   padding: 8px 32px;
-  width: 500px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-right: 24px;
+}
+
+#convert-btn:hover,
+#save-btn:hover {
+  background-color: rgb(26, 1, 85);
+}
+
+#format {
+  outline: none;
+  border: none;
+  font-size: 16px;
+  color: rgb(38, 0, 128);
+  padding: 8px;
+  background-color: rgba(38, 0, 128, 0.1);
+  border-radius: 6px;
+  margin-bottom: 24px;
+}
+
+label {
+  font-size: 14px;
+  color: gray;
+}
+
+h3 {
+  color: rgb(102, 102, 102);
+  font-weight: bold;
+}
+
+#latitude_value,
+#longitude_value {
+  color: rgb(38, 0, 128);
+  font-weight: bold;
 }

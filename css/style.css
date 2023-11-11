@@ -1,0 +1,33 @@
+.input {
+  background-color: white;
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 6px;
+  padding: 8px 16px;
+  width: 500px;
+  display: block;
+}
+
+.field {
+  margin-bottom: 16px;
+}
+
+.coord-converter-form {
+  background-color: rgb(245, 245, 245);
+  padding: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#convert-btn,
+#save-btn {
+  background-color: rgb(38, 0, 128);
+  outline: none;
+  border: 1px solid rgb(38, 0, 128);
+  border-radius: 6px;
+  color: white;
+  padding: 8px 32px;
+  width: 500px;
+}
